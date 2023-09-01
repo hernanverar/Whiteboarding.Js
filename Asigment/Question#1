@@ -10,11 +10,11 @@ Output: "Jasmine%20Ann%20Jones"
 
 Answer # 1 In Javascript 
 
-function replaceSpaces (stringRecursive) {
+function replaceSpaces (inputString) {
   let result = "";
 
-  for (let i = 0; i < inputstring.length; i++) {
-    if (inputString [i] === " ") {
+  for (let i = 0; i < inputString.length; i++) {
+    if (stringRecursive [i] === " ") {
       result += "20%";
     }
     else {
@@ -25,3 +25,5 @@ function replaceSpaces (stringRecursive) {
   return result;
   
 }
+const inputString = "Jasmine Ann Jones";
+const OutputString = replaceSpaces (inputString)
