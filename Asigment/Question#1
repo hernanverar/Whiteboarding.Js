@@ -10,20 +10,34 @@ Output: "Jasmine%20Ann%20Jones"
 
 Answer # 1 In Javascript 
 
+//pseoudocode
+
 function replaceSpaces (inputString) {
+
+   // Initialize an empty string to store the result
   let result = "";
 
+   // Loop through each character in the input string
   for (let i = 0; i < inputString.length; i++) {
+
+     // Check if the current character is a space
     if (stringRecursive [i] === " ") {
+
+     // If it's a space, append "%20" to the result
       result += "20%";
     }
     else {
+       // If it's not a space, append the character to the result
       result += inputString[i];
     }
   }
-
-  return result;
+   
+       // Return the final result
+      return result;
   
 }
+
+// Example usage:
 const inputString = "Jasmine Ann Jones";
-const OutputString = replaceSpaces (inputString)
+const OutputString = replaceSpaces (inputString) 
+ //outputString: "Jasmine%20Ann%20Jones"
