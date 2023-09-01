@@ -11,7 +11,9 @@ Output: "Jasmine%20Ann%20Jones"
 Answer # 1 In Javascript 
 
 //pseoudocode
-
+ 
+  //Iterative Approach
+  
 function replaceSpaces (inputString) {
 
    // Initialize an empty string to store the result
@@ -41,3 +43,17 @@ function replaceSpaces (inputString) {
 const inputString = "Jasmine Ann Jones";
 const OutputString = replaceSpaces (inputString) 
  //outputString: "Jasmine%20Ann%20Jones"
+
+
+ //Recursive approach
+
+ function replaceSpaces(inputString, index = 0, result = "") {
+  if (index === inputString.length) {
+    result += "%20";
+  }
+  else {
+    result += inputString[index];
+  }
+
+  return replaceSpaces(inputString, index + 1,result)
+ }
